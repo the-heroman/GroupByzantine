@@ -1,5 +1,4 @@
 //
-// Created by Jena Heroman on 11/25/22.
 //
 
 #ifndef GROUP_BYZANTINE_INSERTVALUES_H
