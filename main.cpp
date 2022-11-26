@@ -33,9 +33,10 @@ int main() {
      *
      * Deena sends her vote to Clara. Now Clara has 3 votes, and makes a commit message
      *
-     *
-
      */
+
+
+    std::cout << "yahahaha";
 
 
     // nodeID, vote, state, consensus
