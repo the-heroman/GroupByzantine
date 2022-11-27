@@ -8,6 +8,7 @@
 #include "node.h"
 #include "network.h"
 #include "insertValues.h"
+#include "evaluate.h"
 
 int main() {
 
@@ -36,7 +37,6 @@ int main() {
      */
 
 
-    std::cout << "yahahaha";
 
 
     // nodeID, vote, state, consensus
@@ -54,7 +54,14 @@ int main() {
     values v6 = insertValues(006, 0, 0, 0);
     network.insertNode(v6);
 
+
+    std::cout << std::endl;
+    std::cout << "testing " << std::endl;
+
+    network.assignPeer();
     network.printNetwork();
+
+
 
     return 0;
 }
