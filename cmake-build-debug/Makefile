@@ -123,6 +123,33 @@ Group_Byzantine/fast:
 	$(MAKE) -f CMakeFiles/Group_Byzantine.dir/build.make CMakeFiles/Group_Byzantine.dir/build
 .PHONY : Group_Byzantine/fast
 
+evaluate.o: evaluate.cpp.o
+
+.PHONY : evaluate.o
+
+# target to build an object file
+evaluate.cpp.o:
+	$(MAKE) -f CMakeFiles/Group_Byzantine.dir/build.make CMakeFiles/Group_Byzantine.dir/evaluate.cpp.o
+.PHONY : evaluate.cpp.o
+
+evaluate.i: evaluate.cpp.i
+
+.PHONY : evaluate.i
+
+# target to preprocess a source file
+evaluate.cpp.i:
+	$(MAKE) -f CMakeFiles/Group_Byzantine.dir/build.make CMakeFiles/Group_Byzantine.dir/evaluate.cpp.i
+.PHONY : evaluate.cpp.i
+
+evaluate.s: evaluate.cpp.s
+
+.PHONY : evaluate.s
+
+# target to generate assembly for a file
+evaluate.cpp.s:
+	$(MAKE) -f CMakeFiles/Group_Byzantine.dir/build.make CMakeFiles/Group_Byzantine.dir/evaluate.cpp.s
+.PHONY : evaluate.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Group_Byzantine"
+	@echo "... evaluate.o"
+	@echo "... evaluate.i"
+	@echo "... evaluate.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
