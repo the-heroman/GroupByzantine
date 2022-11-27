@@ -75,6 +75,7 @@ void Network::assignPeer(){
 
 // function to print
 // for testing
+// nodeID, vote, state, consensus, peers
 void Network::printNetwork() {
     Node *temp = head;
 
@@ -86,8 +87,9 @@ void Network::printNetwork() {
 
     // otherwise, print
     while (temp!= nullptr){
-        std::cout << "ID " << temp->nv.nodeID << "; consensus " << temp->nv.consensus << std::endl;
-        std::cout << "Peers: ";
+        std::cout << "ID " << temp->nv.nodeID << "; vote " << temp->nv.vote << std::endl;
+        std::cout << "    state " << temp->nv.state << "; consensus " << temp->nv.consensus << std::endl;
+        std::cout << "    Peers: ";
         for (int i = 0; i < 3; i++){
             std::cout << temp->nv.peers[i] << "; ";
         }
