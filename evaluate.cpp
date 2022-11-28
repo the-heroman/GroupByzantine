@@ -47,8 +47,9 @@ void Evaluate::votePeers(Network& net) {
 
         canVote = false;
     }
-    net.printNetwork();
-    std::cout << std::boolalpha << "Validated: " << val << std::endl;
+    //net.printNetwork();
+    //std::cout << std::boolalpha << "Validated: " << val << std::endl;
+    printSystemStatus(numberInSystem, f, val);
 }
 
 // n = total number of nodes
@@ -83,3 +84,12 @@ int Evaluate::faultyAllowed(Network net) {
 }
 
 
+// print the total number of nodes in the system
+// print the allowed faulty nodes
+// does it pass or fail?
+void Evaluate::printSystemStatus(int n, int f, bool val){
+    std::cout << "Nodes in System      | " << n << std::endl;
+    std::cout << "Allowed faulty nodes | " << f << std::endl;
+    std::cout << std::boolalpha << "  Does it pass? " << val << std::endl << std::endl;
+
+}
