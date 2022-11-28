@@ -16,10 +16,14 @@ public:
     // leader starts the message attempt
 
     // attempt vote with peers; state is determining factor
-    // update vote count
+    // update vote count, update consensus
     void votePeers(Network& net);
 
-    // update the system; consensus: (n-1)/3
+    // validate the updated system; consensus: (n-1)/3
+    bool validateSystem(int n, int c, int f);
+
+    // number of faulty nodes allowed
+    int faultyAllowed(Network net);
 
     // print if consensus was reached or if it failed
 

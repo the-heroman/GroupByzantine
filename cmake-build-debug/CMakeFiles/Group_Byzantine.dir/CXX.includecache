@@ -6,21 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/Users/heroman/CLionProjects/Group_Byzantine/evaluate.cpp
+/Users/heroman/CLionProjects/Group_Byzantine/evaluate.h
+network.h
+/Users/heroman/CLionProjects/Group_Byzantine/network.h
+
+/Users/heroman/CLionProjects/Group_Byzantine/insertValues.h
+network.h
+/Users/heroman/CLionProjects/Group_Byzantine/network.h
+
+/Users/heroman/CLionProjects/Group_Byzantine/main.cpp
 iostream
 -
+node.h
+/Users/heroman/CLionProjects/Group_Byzantine/node.h
+network.h
+/Users/heroman/CLionProjects/Group_Byzantine/network.h
+insertValues.h
+/Users/heroman/CLionProjects/Group_Byzantine/insertValues.h
 evaluate.h
 /Users/heroman/CLionProjects/Group_Byzantine/evaluate.h
-
-/Users/heroman/CLionProjects/Group_Byzantine/evaluate.h
-network.h
-/Users/heroman/CLionProjects/Group_Byzantine/network.h
-
-/Users/heroman/CLionProjects/Group_Byzantine/network.cpp
-iostream
--
-network.h
-/Users/heroman/CLionProjects/Group_Byzantine/network.h
 
 /Users/heroman/CLionProjects/Group_Byzantine/network.h
 node.h
