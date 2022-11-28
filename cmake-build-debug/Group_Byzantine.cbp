@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/heroman/CLionProjects/Group_Byzantine/evaluate.cpp">
+			<Option target="Group_Byzantine"/>
+		</Unit>
+		<Unit filename="/Users/heroman/CLionProjects/Group_Byzantine/evaluate.h">
+			<Option target="Group_Byzantine"/>
+		</Unit>
 		<Unit filename="/Users/heroman/CLionProjects/Group_Byzantine/insertValues.h">
 			<Option target="Group_Byzantine"/>
 		</Unit>

@@ -8,6 +8,7 @@
 #include "node.h"
 #include "network.h"
 #include "insertValues.h"
+#include "evaluate.h"
 
 int main() {
 
@@ -33,27 +34,37 @@ int main() {
      *
      * Deena sends her vote to Clara. Now Clara has 3 votes, and makes a commit message
      *
-     *
-
      */
+
+
 
 
     // nodeID, vote, state, consensus
     Network network;
-    values v1 = insertValues(001, 0, 0, 0);
+    values v1 = insertValues(001, 0, 1, 0);
     network.insertNode(v1);
-    values v2 = insertValues(002, 0, 0, 0);
+    values v2 = insertValues(002, 0, 1, 0);
     network.insertNode(v2);
     values v3 = insertValues(003, 0, 0, 0);
     network.insertNode(v3);
-    values v4 = insertValues(004, 0, 0, 0);
+    values v4 = insertValues(004, 0, 1, 0);
     network.insertNode(v4);
-    values v5 = insertValues(005, 0, 0, 0);
+    values v5 = insertValues(005, 0, 1, 0);
     network.insertNode(v5);
-    values v6 = insertValues(006, 0, 0, 0);
-    network.insertNode(v6);
+    //values v6 = insertValues(006, 0, 0, 0);
+    //network.insertNode(v6);
 
-    network.printNetwork();
+
+    std::cout << std::endl;
+    std::cout << "testing " << std::endl;
+
+    network.assignPeer();
+    Evaluate ev;
+    ev.votePeers(network);
+    //network.printNetwork();
+
+
+
 
     return 0;
 }
