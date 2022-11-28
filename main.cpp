@@ -38,10 +38,22 @@ int main() {
 
 
 
-
+    int state = 0;
     // nodeID, vote, state, consensus
+    Network network2;
+    for (int i = 1; i <= 100; i++) {
+        state = 1;
+        if (i % 3 == 0) {
+            state = 0;
+        }
+        values v = insertValues(i, 0, state, 0);
+        network2.insertNode(v);
+    }
+
     Network network;
     Evaluate ev;
+    network2.assignPeer();
+    ev.votePeers(network2);
 
     // with 5 nodes
     values v1 = insertValues(001, 0, 1, 0);
