@@ -12,7 +12,6 @@
 class Evaluate: public Network {
 public:
 
-
     // leader starts the message attempt
 
     // attempt vote with peers; state is determining factor
@@ -25,7 +24,9 @@ public:
     // number of faulty nodes allowed
     int faultyAllowed(Network net);
 
-    // print if consensus was reached or if it failed
+    // print function
+    void printSystemStatus(int n, int f, bool val);
+
 
 };
 
