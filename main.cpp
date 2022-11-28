@@ -61,7 +61,8 @@ int main() {
     network.assignPeer();
     Evaluate ev;
     ev.votePeers(network);
-    network.printNetwork();
+    //network.printNetwork();
+
 
 
 
