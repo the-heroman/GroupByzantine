@@ -51,6 +51,7 @@ int main() {
     }
 
     Network network;
+
     Evaluate ev;
     network2.assignPeer();
     ev.votePeers(network2);
