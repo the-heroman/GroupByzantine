@@ -41,18 +41,29 @@ int main() {
 
     // nodeID, vote, state, consensus
     Network network;
-    values v1 = insertValues(001, 0, 1, 0);
-    network.insertNode(v1);
-    values v2 = insertValues(002, 0, 1, 0);
-    network.insertNode(v2);
-    values v3 = insertValues(003, 0, 0, 0);
-    network.insertNode(v3);
-    values v4 = insertValues(004, 0, 1, 0);
-    network.insertNode(v4);
-    values v5 = insertValues(005, 0, 1, 0);
-    network.insertNode(v5);
-    //values v6 = insertValues(006, 0, 0, 0);
-    //network.insertNode(v6);
+    for (int i = 1; i <= 100; i++) {
+        state = 1;
+        if (i % 3 == 0) {
+            state = 0;
+        }
+        values v = insertValues(i, 0, state, 0);
+        network.insertNode(v);
+    }
+    
+    // Keeping this just in case I messed up lolz
+
+    // values v1 = insertValues(001, 0, 1, 0);
+    // network.insertNode(v1);
+    // values v2 = insertValues(002, 0, 1, 0);
+    // network.insertNode(v2);
+    // values v3 = insertValues(003, 0, 0, 0);
+    // network.insertNode(v3);
+    // values v4 = insertValues(004, 0, 1, 0);
+    // network.insertNode(v4);
+    // values v5 = insertValues(005, 0, 1, 0);
+    // network.insertNode(v5);
+    // values v6 = insertValues(006, 0, 0, 0);
+    // network.insertNode(v6);
 
 
     std::cout << std::endl;
