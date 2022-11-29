@@ -1,17 +1,17 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/heroman/CLionProjects/Group_Byzantine/evaluate.cpp" "/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/CMakeFiles/Group_Byzantine.dir/evaluate.cpp.o"
-  "/Users/heroman/CLionProjects/Group_Byzantine/main.cpp" "/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/CMakeFiles/Group_Byzantine.dir/main.cpp.o"
-  "/Users/heroman/CLionProjects/Group_Byzantine/network.cpp" "/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/CMakeFiles/Group_Byzantine.dir/network.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/willcastle/Desktop/GroupByzantine234/evaluate.cpp" "CMakeFiles/Group_Byzantine.dir/evaluate.cpp.o" "gcc" "CMakeFiles/Group_Byzantine.dir/evaluate.cpp.o.d"
+  "/Users/willcastle/Desktop/GroupByzantine234/linkedlist.cpp" "CMakeFiles/Group_Byzantine.dir/linkedlist.cpp.o" "gcc" "CMakeFiles/Group_Byzantine.dir/linkedlist.cpp.o.d"
+  "/Users/willcastle/Desktop/GroupByzantine234/main.cpp" "CMakeFiles/Group_Byzantine.dir/main.cpp.o" "gcc" "CMakeFiles/Group_Byzantine.dir/main.cpp.o.d"
+  "/Users/willcastle/Desktop/GroupByzantine234/network.cpp" "CMakeFiles/Group_Byzantine.dir/network.cpp.o" "gcc" "CMakeFiles/Group_Byzantine.dir/network.cpp.o.d"
   )
 
 # Targets to which this target links.
