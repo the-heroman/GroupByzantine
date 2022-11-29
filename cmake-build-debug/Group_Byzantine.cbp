@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug"/>
+				<Option working_dir="/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug"/>
+				<Option working_dir="/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug"/>
+				<Option working_dir="/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Group_Byzantine">
-				<Option output="/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Group_Byzantine" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug"/>
+				<Option output="/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Group_Byzantine" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 Group_Byzantine"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 Group_Byzantine"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Group_Byzantine/fast">
-				<Option output="/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Group_Byzantine" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug"/>
+				<Option output="/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Group_Byzantine" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,35 +73,44 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 Group_Byzantine/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/heroman/CLionProjects/Group_Byzantine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 Group_Byzantine/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/willcastle/Desktop/GroupByzantine234/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/heroman/CLionProjects/Group_Byzantine/evaluate.cpp">
+		<Unit filename="/Users/willcastle/Desktop/GroupByzantine234/data.h">
 			<Option target="Group_Byzantine"/>
 		</Unit>
-		<Unit filename="/Users/heroman/CLionProjects/Group_Byzantine/evaluate.h">
+		<Unit filename="/Users/willcastle/Desktop/GroupByzantine234/evaluate.cpp">
 			<Option target="Group_Byzantine"/>
 		</Unit>
-		<Unit filename="/Users/heroman/CLionProjects/Group_Byzantine/insertValues.h">
+		<Unit filename="/Users/willcastle/Desktop/GroupByzantine234/evaluate.h">
 			<Option target="Group_Byzantine"/>
 		</Unit>
-		<Unit filename="/Users/heroman/CLionProjects/Group_Byzantine/main.cpp">
+		<Unit filename="/Users/willcastle/Desktop/GroupByzantine234/insertValues.h">
 			<Option target="Group_Byzantine"/>
 		</Unit>
-		<Unit filename="/Users/heroman/CLionProjects/Group_Byzantine/network.cpp">
+		<Unit filename="/Users/willcastle/Desktop/GroupByzantine234/linkedlist.cpp">
 			<Option target="Group_Byzantine"/>
 		</Unit>
-		<Unit filename="/Users/heroman/CLionProjects/Group_Byzantine/network.h">
+		<Unit filename="/Users/willcastle/Desktop/GroupByzantine234/linkedlist.h">
 			<Option target="Group_Byzantine"/>
 		</Unit>
-		<Unit filename="/Users/heroman/CLionProjects/Group_Byzantine/node.h">
+		<Unit filename="/Users/willcastle/Desktop/GroupByzantine234/main.cpp">
 			<Option target="Group_Byzantine"/>
 		</Unit>
-		<Unit filename="/Users/heroman/CLionProjects/Group_Byzantine/CMakeLists.txt">
+		<Unit filename="/Users/willcastle/Desktop/GroupByzantine234/network.cpp">
+			<Option target="Group_Byzantine"/>
+		</Unit>
+		<Unit filename="/Users/willcastle/Desktop/GroupByzantine234/network.h">
+			<Option target="Group_Byzantine"/>
+		</Unit>
+		<Unit filename="/Users/willcastle/Desktop/GroupByzantine234/node.h">
+			<Option target="Group_Byzantine"/>
+		</Unit>
+		<Unit filename="/Users/willcastle/Desktop/GroupByzantine234/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

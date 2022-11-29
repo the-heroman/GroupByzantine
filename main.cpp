@@ -9,6 +9,12 @@
 #include "network.h"
 #include "insertValues.h"
 #include "evaluate.h"
+#include <string>
+#include "data.h"
+#include "linkedlist.h"
+
+using std::cout;
+using std::endl;
 
 int main() {
 
@@ -159,6 +165,191 @@ int main() {
     network.assignPeer();
     ev.votePeers(network);
 
+
+
+    std::cout << "******************************************" << std::endl;
+
+    //generate and display the test data
+    int numTestID[] ={1,2,3,4,5,6,7,8,9,10};
+    string peerList[] ={"Peer 1", "Peer 2","Peer 3","Peer 4","Peer 5","Peer 6","Peer 7","Peer 8","Peer 9","Peer 10"};
+    bool faultList[] = {false,false,true,true,true,true,false,true,false,false};
+    bool voteList[] = {true,true,true,true,true,true,true,true,true,true};
+
+    //making temporary data holder for testing
+    Data tmpData;
+
+    //making linked list object
+    cout << "creating blockchain...";
+    LinkedList list;
+    cout << "done" << endl << endl;
+
+    cout << "checking blockchain...\n";
+    cout << "\tThere are " << list.getCount() << " nodes." << endl;
+    list.printList();
+    cout << endl;
+
+    int faultCount = 0;
+    int voteCout = 0;
+
+    //adding all the test data to the list
+    for (int i = 0; i < 10; i++) {
+        tmpData.id = numTestID[i];
+        tmpData.data = peerList[i];
+        tmpData.isFaulty = faultList[i];
+        tmpData.vote = voteList[i];
+
+        cout << "adding " << tmpData.id << ": " << tmpData.data ;
+
+        if (list.addNode(tmpData.id, &(tmpData.data),0)) {
+            cout << " success";
+        } else {
+            cout << "failed";
+        }
+
+        if(tmpData.isFaulty){
+            cout << " Faulty" << endl;
+            faultCount++;
+        }
+        else
+        {
+            cout << endl;
+        }
+
+        if(tmpData.vote)
+        {
+            voteCout++;
+        }
+    }
+    cout << endl;
+
+
+
+    cout << "checking blockchain...\n";
+    cout << "\tThere are " << list.getCount() << " nodes." << endl;
+    list.printList();
+    cout << endl << endl;
+
+    cout << "Block Chain Size: " << list.getCount() << endl;
+    cout << "Fault Count = " << faultCount << endl << endl << endl;
+
+
+    cout <<"Client Sending Transaction..." << endl << endl;
+
+    cout <<"Phase 1 Begins..." << endl << endl;
+    cout << "Vote Count = " << voteCout << endl;
+    cout << "Fault Count = " << faultCount << endl << endl << endl;
+
+
+    if (list.getCount()-1/faultCount < voteCout)
+    {
+        cout << "Proceed with voting..." << endl;
+    }
+    else
+    {
+        cout << "Faulty Nodes exceeds N-1/3 Votes" << endl;
+        cout << "Transaction Declined" << endl;
+
+        cout << endl << endl;
+        cout << "clearing blockchain...";
+        list.clearList();
+        cout << "done" << endl << endl;
+
+        cout << "checking blockchain...\n";
+        cout << "\tThere are " << list.getCount() << " nodes." << endl;
+        list.printList();
+        cout << endl << endl;
+        cout << endl;
+    }
+    faultCount = 0;
+    voteCout = 0;
+
+
+    cout << "**********************************************************************" << endl << endl;
+
+
+    int numTestID2[] ={1,2,3,4,5,6,7,8,9,10};
+    string peerList2[] ={"Peer 1", "Peer 2","Peer 3","Peer 4","Peer 5","Peer 6","Peer 7","Peer 8","Peer 9","Peer 10"};
+    bool faultList2[] = {true,false,false,false,false,false,false,true,true,false};
+    bool voteList2[] = {true,true,true,true,true,true,true,true,true,true};
+    int voteWeight[] = {10,9,8,7,6,5,4,3,2,1};
+    LinkedList list2;
+    //making Block Chain object
+    cout << "creating blockchain...";
+    list2.clearList();
+    cout << "done" << endl << endl;
+
+    cout << "checking blockchain...\n";
+    cout << "\tThere are " << list2.getCount() << " nodes." << endl;
+    list2.printList();
+    cout << endl;
+
+    Data tmpData2;
+    int faultyWeightTotal = 0;
+    int nonFaultWeightTotal=0;
+    //adding all the test data to the list
+    for (int i = 0; i < 10; i++) {
+        tmpData2.id = numTestID2[i];
+        tmpData2.data = peerList2[i];
+        tmpData2.isFaulty = faultList2[i];
+        tmpData2.vote = voteList2[i];
+
+
+        cout << "adding " << tmpData2.id << ": " << tmpData2.data ;
+
+        if (list2.addNode(tmpData2.id, &(tmpData2.data),voteWeight[i] * 10)) {
+            cout << " success";
+        } else {
+            cout << "failed";
+        }
+
+        if(tmpData2.isFaulty){
+            cout << " Faulty" << endl;
+            faultCount++;
+            faultyWeightTotal += voteWeight[i] * 10;
+        }
+        else
+        {
+            cout << endl;
+        }
+        if(tmpData.vote)
+        {
+            voteCout++;
+        }
+
+        if(!tmpData2.isFaulty){
+            nonFaultWeightTotal += voteWeight[i] * 10;
+        }
+    }
+    cout << endl;
+
+
+
+    cout << "checking blockchain...\n";
+    cout << "\tThere are " << list2.getCount() << " nodes." << endl;
+    list2.printList();
+    cout << endl << endl;
+
+    cout << "Block Chain Size: " << list2.getCount() << endl;
+    cout << "Fault Count = " << faultCount << endl;
+    cout << "Votes Needed = " << list2.getCount() - faultCount << endl << endl;
+
+    cout <<"Client Sending Transaction..." << endl << endl;
+
+
+    cout << "Display Vote Weight" << endl;
+    list2.printVoteWeightPublic();
+
+    cout << endl;
+    cout << "Faulty Weight Total: 100+20+30 / 2 = " << faultyWeightTotal/2 << endl;
+    cout << "Non Faulty Weight Total: 100+20+30 = " << nonFaultWeightTotal- 10 << endl;
+
+    cout << "Dividing NonFaultWeight by Fault Weight..." << endl;
+    cout << "Must be greater than or equal to 2..." << endl <<endl;
+
+    if(nonFaultWeightTotal/faultyWeightTotal >= 2)
+    {
+        cout <<"Transaction Approved" << endl;
+    }
 
     return 0;
 }
