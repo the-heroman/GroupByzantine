@@ -1,7 +1,13 @@
 # GroupByzantine
-This is the README for our group 3 project: evaluating pBFT
+Group 3 Members: 
 
-Group 3 Members: Jena Heroman, Katia Gutierrez, Nicodemus Robles, William Castillo
+Jena Lee Heroman
+
+Will Castillo
+
+Katia Melina Gutierrez
+
+Nicodemus A. Robles
 
 ## Functionality
 
@@ -35,8 +41,57 @@ by Muratov, Lebedev, Iushkevich, Nasrulin, Takemiya
 
 this program confirms the algorithm that in any system with n number of nodes, the number of faulty nodes allowed is (n-1)/3
 
-## HOW TO
-compile the program and to see pre-generated examples of the system
+## HOW TO RUN USING Online Compiler and Debugger for C/C++ (OnlineGDB)
+
+
+
+
+Download the Program Repository files from...
+
+https://github.com/the-heroman/GroupByzantine/archive/refs/heads/main.zip
+
+Extract folder from Zip to local storage
+
+On your web browser visit https://www.onlinegdb.com/online_c++_compiler
+
+On the top of the webpage, left of "RUN", there will be a cloud icon with an upward arrow.
+Click it and locate the previously extracted folder. Then, upload each of the following files.
+
+You should upload 10 files in total.
+
+node.h
+
+network.h
+
+network.cpp
+
+linkedlist.h
+
+linkedlist.cpp
+
+insertValues.h
+
+evaluate.h
+
+evaluate.cpp
+
+data.h
+
+main.cpp 
+
+// Please note by default main.cpp is provided by OnlineGDB but will automatically be replaced with the newly uploaded main.cpp
+
+//Text file "CmakeLists.txt" and folders "cmake-build-debug", ".idea", and ".git"
+DO NOT NEED TO BE UPLOADED
+
+Once all 10 files are uploaded click run and program should compile. 
+
 
 ## CREDIT
-Will, Katia, Jena, Nicodemus 
+Jena Lee Heroman,
+
+Will Castillo,
+
+Katia Melina Gutierrez,
+
+Nicodemus A. Robles
