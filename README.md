@@ -1,7 +1,7 @@
 # GroupByzantine
 Group 3 Members: 
 
-Jena Lee Heroman
+Jena Heroman
 
 Will Castillo
 
@@ -39,7 +39,7 @@ Node()
 YAC: BFT Consensus Algorithm for Blockchain
 by Muratov, Lebedev, Iushkevich, Nasrulin, Takemiya
 
-this program confirms the algorithm that in any system with n number of nodes, the number of faulty nodes allowed is (n-1)/3
+This program confirms the pBFT algorithm that in any system with n number of nodes, the number of faulty nodes allowed is (n-1)/3. We proposed the idea of adding weight to validated voting peers to see if we could reduce the vote-step process. This is done using a mock system with a single round of voting. 
 
 ## HOW TO RUN USING Online Compiler and Debugger for C/C++ (OnlineGDB)
 
@@ -55,29 +55,31 @@ Extract folder from Zip to local storage
 On your web browser visit https://www.onlinegdb.com/online_c++_compiler
 
 On the top of the webpage, left of "RUN", there will be a cloud icon with an upward arrow.
-Click it and locate the previously extracted folder. Then, upload each of the following files.
+Click it and locate the previously extracted folder. 
+
+Then, upload each of the following files:
+
+	node.h
+
+	network.h
+	
+	network.cpp
+
+	linkedlist.h
+
+	linkedlist.cpp
+
+	insertValues.h
+
+	evaluate.h
+
+	evaluate.cpp
+
+	data.h
+
+	main.cpp 
 
 You should upload 10 files in total.
-
-node.h
-
-network.h
-
-network.cpp
-
-linkedlist.h
-
-linkedlist.cpp
-
-insertValues.h
-
-evaluate.h
-
-evaluate.cpp
-
-data.h
-
-main.cpp 
 
 // Please note by default main.cpp is provided by OnlineGDB but will automatically be replaced with the newly uploaded main.cpp
 
@@ -88,7 +90,7 @@ Once all 10 files are uploaded click run and program should compile.
 
 
 ## CREDIT
-Jena Lee Heroman,
+Jena Heroman,
 
 Will Castillo,
 
